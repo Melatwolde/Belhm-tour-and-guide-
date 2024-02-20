@@ -1,0 +1,21 @@
+DROP TABLE IF EXISTS Tour_package;
+
+CREATE TABLE Tour_package (
+    PackID INT(4) PRIMARY KEY,
+    Destination VARCHAR(40) NOT NULL,
+    Duration DATE,
+    Activities VARCHAR(60),
+    Price DECIMAL(8,2)
+);
+
+INSERT INTO Tour_package (PackID, Destination, Duration, Activities, Price)
+VALUES
+    (1002, 'Victoria Falls', '2024-07-10', 'Scenic tours, river cruises, bungee jumping', 1800.00),
+    (1003, 'Maasai Mara National Reserve', '2024-06-22', 'Big five game drives, cultural visits', 2800.00),
+    (1004, 'Kruger National Park', '2024-07-05', 'Safari tours, bird watching, bush walks', 2100.00),
+    (1005, 'Mount Rasdashen', '2024-06-18', 'Climbing expeditions, trekking', 3500.00),
+    (1006, 'Cape Town', '2024-07-12', 'City tours, wine tasting, Table Mountain visit', 1500.00),
+    (1007, 'Okavango Delta', '2024-06-25', 'Mokoro safaris, bird watching, nature walks', 3200.00),
+    (1008, 'Chebera Churchura', '2024-06-20', 'Camping', 2200.00);
+
+SELECT * FROM Tour_package;   
